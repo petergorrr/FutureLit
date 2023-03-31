@@ -1,0 +1,7 @@
+{
+  "name": "futurelit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
