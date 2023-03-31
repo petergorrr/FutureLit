@@ -1,1 +1,11 @@
-
+.active-bar {
+    width: 100%;
+    height: 2px;
+    background: var(--ion-color-primary);
+    border-radius: 2px;
+    order: -2;
+    display: none;
+}
+.tab-selected .active-bar {
+    display: block;
+}

@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule],
 })
+
 export class TabsPage {
   public environmentInjector = inject(EnvironmentInjector);
 
