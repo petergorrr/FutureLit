@@ -15,9 +15,9 @@ export class AppComponent {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {
-    setTimeout(() => {
-      this.router.navigate(['get-started']);
-    }, 2500);
-  }
+  // ngOnInit() {
+  //   setTimeout(() => {
+  //     this.router.navigate(['get-started']);
+  //   }, 2500);
+  // }
 }

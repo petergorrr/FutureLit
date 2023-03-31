@@ -5,17 +5,17 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-get-started',
-  templateUrl: './get-started.page.html',
-  styleUrls: ['./get-started.page.scss'],
+  selector: 'app-verify',
+  templateUrl: './verify.page.html',
+  styleUrls: ['./verify.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class GetStartedPage {
+export class VerifyPage {
 
   constructor(private router: Router) { }
-
+  
   goToPage() {
-    this.router.navigate(['verify']);
+    this.router.navigate(['tabs']);
   }
 }
