@@ -76,6 +76,12 @@ ion-item.promo {
     }
 }
 
+.verified::after {
+    content: url('../../assets/verified.png');
+    width: 14px;
+    height: 14px;
+}
+
 ion-toolbar {
     ion-icon {
         color: var(--ion-color-primary);
