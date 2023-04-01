@@ -14,7 +14,7 @@ export class Tab1Page {
 
   constructor(private router: Router) { }
   
-  goToPage() {
-    this.router.navigate(['skill-set']);
+  goToPage(route: string) {
+    this.router.navigate([route]);
   }
 }

@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="notification">
-      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-icon name="notifications-outline" (click)="goToPage('tabs/tab3')"></ion-icon>
       <ion-badge color="danger">3</ion-badge>
     </div>
   </div>
@@ -34,7 +34,7 @@
         <ion-img src="../../assets/recent-projects.png"></ion-img>
       </div>
       <div class="btn-container skill-set">
-        <ion-button shape="round" (click)="goToPage()">
+        <ion-button shape="round" (click)="goToPage('skill-set')">
           <ion-icon src="../../assets/icon/360.svg"></ion-icon>
           Skill Set
         </ion-button>
