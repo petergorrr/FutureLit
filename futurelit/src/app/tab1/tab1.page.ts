@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -10,5 +11,10 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
   imports: [IonicModule, ExploreContainerComponent],
 })
 export class Tab1Page {
-  constructor() {}
+
+  constructor(private router: Router) { }
+  
+  goToPage() {
+    this.router.navigate(['skill-set']);
+  }
 }
