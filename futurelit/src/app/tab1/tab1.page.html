@@ -1,17 +1,59 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="header-row row">
+    <div class="profile">
+      <div class="avatar">
+        <ion-img src="../../assets/e-profile-avatar.png"></ion-img>
+      </div>
+      <div class="info">
+        <ion-label class="greet">Good Morning,</ion-label>
+        <ion-label class="name verified">Lionel Messi </ion-label>
+      </div>
+    </div>
+    <div class="notification">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-badge color="danger">3</ion-badge>
+    </div>
+  </div>
 
-  <app-explore-container name="Home"></app-explore-container>
+  <div class="row">
+    <div class="left">
+      <div class="partition score">
+        <ion-label class="title">Credit Score</ion-label>
+        <ion-label class="last-update">1st April, 2023</ion-label>
+        <ion-img src="../../assets/score-percentage.png"></ion-img>
+        <ion-label class="result">You're <span>RELIABLE!</span></ion-label>
+      </div>
+      <div class="partition score-weight">
+        <ion-img src="../../assets/score-weight.png"></ion-img>
+      </div>
+    </div>
+  
+    <div class="right">
+      <div class="partition countdown">
+        <ion-label class="title">Countdown</ion-label>
+        <ion-img src="../../assets/recent-projects.png"></ion-img>
+      </div>
+      <div class="btn-container skill-set">
+        <ion-button shape="round" (click)="goToPage()">
+          <ion-icon src="../../assets/icon/360.svg"></ion-icon>
+          Skill Set
+        </ion-button>
+      </div>
+      <div class="btn-container career-test">
+        <ion-button shape="round" color="secondary">
+          Career Test
+        </ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="radar-chart partition">
+      <ion-img src="../../assets/radar-chart.png"></ion-img>
+    </div>
+  </div>
+
+  <div class="ai-chatbot">
+    <ion-img src="../../assets/ai-chatbot.png"></ion-img>
+  </div>
 </ion-content>

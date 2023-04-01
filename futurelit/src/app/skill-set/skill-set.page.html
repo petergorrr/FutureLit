@@ -36,7 +36,7 @@
 
         <ion-label class="title">Completed Tasks</ion-label>
 
-        <swiper-container>
+        <swiper-container [slidesPerView]="1" [loop]="true" navigation="true" pagination="true">
           <swiper-slide>
             <ion-img src="../../assets/completed-project-computing.png"></ion-img>
           </swiper-slide>

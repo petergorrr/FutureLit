@@ -45,4 +45,14 @@ ion-content {
             font-size: 1.2rem;
         }
     }
+
+    swiper-container {
+        --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #cccccc);
+        --swiper-pagination-color: var(--ion-color-primary, #fff);
+        --swiper-pagination-progressbar-bg-color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
+        --swiper-navigation-size: 20px;
+        --swiper-navigation-top-offset: 50%;
+        --swiper-navigation-sides-offset: 10px;
+        --swiper-navigation-color: #fff;
+    }
 }
