@@ -1,17 +1,83 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Projects
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class = "ion-padding">
+  <h1>Project Category</h1>
+  <ion-searchbar placeholder="Search project..."></ion-searchbar>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Project</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div style="padding: 5%;">
+    <ion-segment value = "explore" [(ngModel)]="defaultView">
+      <ion-segment-button value = "explore">
+        <ion-label>explore</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value = "ongoing">
+        <ion-label>ongoing</ion-label>
+      </ion-segment-button>
+    </ion-segment>
 
-  <app-explore-container name="Projects"></app-explore-container>
-</ion-content>
+    <ng-container [ngSwitch]="defaultView">
+      <div *ngSwitchCase="'explore'">
+        <div class="row">
+          <div class="square">
+            <div style="align-self: center; padding-bottom: 0.2rem;">
+              <ion-icon src = "../../assets/icon/computing realm.svg" class="icon"></ion-icon>
+            </div>
+            <div class ="bottom">
+              <ion-label class="category">Computing Realm</ion-label>
+            </div>
+          </div>
+          <div style="width: 1rem;"></div>
+          <div class="square">
+            <div style="align-self: center; padding-bottom: 0.4rem;">
+              <ion-icon src = "../../assets/icon/community realm.svg" class="icon"></ion-icon>
+            </div>
+            <div class ="bottom">
+              <ion-label class="category">Community Realm</ion-label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="square">
+            <div style="align-self: center; padding-bottom: 0.8rem;">
+              <ion-icon src = "../../assets/icon/Concept Art Realm.svg" class="icon"></ion-icon>
+            </div>
+            <div class ="bottom">
+              <ion-label class="category">Concept Art Realm</ion-label>
+            </div>
+          </div>
+          <div style="width: 1rem;"></div>
+          <div class="square">
+            <div style="align-self: center; padding-bottom: 0.5rem;">
+              <ion-icon src = "../../assets/icon/Culinary Realm.svg" class="icon"></ion-icon>
+            </div>
+            <div class ="bottom">
+              <ion-label class="category">Culinary Realm</ion-label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="square">
+            <div style="align-self: center; padding-bottom: 0.8rem;">
+              <ion-icon src = "../../assets/icon/sport_realm.svg" class="icon"></ion-icon>
+            </div>
+            <div class ="bottom">
+              <ion-label class="category">Sport Realm</ion-label>
+            </div>
+          </div>
+          <div style="width: 1rem;"></div>
+          <div class="square">
+            <div style="align-self: center; padding-bottom: 0.6rem;">
+              <ion-icon src = "../../assets/icon/music_realm.svg" class="icon"></ion-icon>
+            </div>
+            <div class ="bottom">
+              <ion-label class="category">Music Realm</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngSwitchCase = "'ongoing'">
+
+      </div>
+    </ng-container>
+
+  </div>
+
+
+</ion-content> 
