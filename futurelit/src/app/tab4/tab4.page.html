@@ -1,17 +1,88 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Profile
-    </ion-title>
-  </ion-toolbar>
+  <div class="eprofile">
+    <ion-img src="../../assets/e-profile-card-bg.png"></ion-img>
+    
+    <div class="card-info">
+      <div class="card-avatar">
+        <ion-avatar class="avatar">
+          <ion-img src="../../assets/e-profile-avatar.png"></ion-img>
+        </ion-avatar>
+      </div>
+    
+      <div class="card-text">
+        <ion-label class="name verified">Lionel Messi </ion-label>
+        <ion-label class="dob">DOB: 24 June 2002</ion-label>
+        <ion-label class="phone">Phone: (+60) 11 - 1111- 11111</ion-label>
+        <ion-label class="institute">Institute: Asia Pacific University</ion-label>
+      </div>
+    </div>
+
+    <div class="qrcode">
+      <ion-img src="../../assets/qrcode.png"></ion-img>
+      <ion-label class="e-sign">e-signature</ion-label>
+    </div>
+
+    <div class="btn-container">
+      <ion-button shape="round" >
+        <ion-icon src="../../assets/icon/360.svg"></ion-icon>
+        Skill Set
+      </ion-button>
+    </div>
+  </div>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-label class="title">Account</ion-label>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
+      <ion-label>Change Password</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
 
-  <app-explore-container name="Profile"></app-explore-container>
+    <ion-item (click)="goToPage('verify')">
+      <ion-icon name="log-out-outline"></ion-icon>
+      <ion-label>Logout Application</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profile Information</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="receipt-outline"></ion-icon>
+      <ion-label>Upload Certificate</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-label class="title">General</ion-label>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="settings-outline"></ion-icon>
+      <ion-label>Settings</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+      <ion-label>Help & Support</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="document-text-outline"></ion-icon>
+      <ion-label>Terms & Conditions</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="shield-outline"></ion-icon>
+      <ion-label>Privacy Policy</ion-label>
+      <ion-icon name="chevron-forward-outline" class="chevron"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>

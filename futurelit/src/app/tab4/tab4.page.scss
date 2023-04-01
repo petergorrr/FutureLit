@@ -1,0 +1,126 @@
+.title {
+    color: #050505;
+    font-weight: 600;
+}
+
+ion-list {
+
+    ion-item {
+        margin-left: -14px;
+        
+        ion-label {
+            padding-left: 20px;
+            font-size: .9rem;
+            letter-spacing: -.5px;
+        }
+    }
+
+    ion-icon {
+        color: var(--ion-color-primary);
+    }
+
+    ion-icon.chevron {
+        font-size: 20px;
+    }
+}
+
+.eprofile {
+    padding-top: 1rem;
+    z-index: 1;
+
+    ion-avatar {
+        --border-radius: 4px;
+
+        ion-img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    ion-label {
+        color: var(--ion-color-primary-contrast);
+    }
+
+    .card-avatar {
+        width: 28%;
+    }
+
+    .card-text {
+        width: 72%;
+        padding-top: 4px;
+
+        ion-label {
+            display: block;
+        }
+
+        ion-label.name {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        ion-label.dob,
+        ion-label.phone,
+        ion-label.institute {
+            font-size: .8rem;
+        }
+    }
+
+    .card-info {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+
+        ion-label.name {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+
+    .qrcode {
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        z-index: 2;
+
+        ion-img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        
+        ion-label.e-sign {
+            font-size: .7rem;
+            font-weight: 600;
+            color: var(--ion-color-primary-contrast);
+        }
+    }
+
+    .btn-container {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 2;
+
+        ion-button {
+            text-transform: capitalize;
+            overflow: hidden;
+            font-size: .8rem;
+
+            ion-icon {
+                font-size: 30px;
+                padding-right: 4px;
+            }
+        }
+    }
+}
+
+.verified::after {
+    content: url('../../assets/verified.png');
+    width: 14px;
+    height: 14px;
+}
