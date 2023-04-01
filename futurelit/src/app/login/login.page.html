@@ -1,0 +1,47 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#" icon="close-outline"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <div class="img-container">
+    <img src="../../assets/icon/logo-desc.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="container">
+    <div class="box">
+      <div>
+        <ion-icon name="card-outline"></ion-icon>
+        <ion-item>
+          <ion-input type="tel" label="NRIC (National Registration Identity Card)" labelPlacement="stacked" placeholder="XXXXXX-XX-XXXX"></ion-input>
+        </ion-item>
+      </div>
+      
+      <div>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <div class="code">
+          <span>Verification Code</span>
+          <code-input
+            [codeLength]="4">
+          </code-input>
+        </div>
+        <div class="btn-container">
+          <ion-button expand="block" color="primary" shape="round">Get Code</ion-button>
+        </div>
+      </div>
+
+      <div class="forgot-container">
+        <ion-button expand="block" fill="clear" class="btn-forgot">Forgot your password?</ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-container">
+    <ion-button expand="block" color="primary" shape="round" (click)="goToPage()">Login</ion-button>
+    <div class="register">
+      <span>Don't have an account?</span>
+      <a href="#">Register</a>
+    </div>
+  </div>
+</ion-content>

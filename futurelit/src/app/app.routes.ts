@@ -21,5 +21,9 @@ export const routes: Routes = [
   {
     path: 'verify',
     loadComponent: () => import('./verify/verify.page').then( m => m.VerifyPage)
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
   }
 ];
