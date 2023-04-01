@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#" icon="close-outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="title">
+    <ion-icon src="../../assets/icon/360.svg"></ion-icon>
+    <ion-label>Skill Set View</ion-label>
+  </div>
+
+  <div class="skill-set-filter">
+
+    <ion-segment [scrollable]="true" value="computing" [(ngModel)]="selectedView">
+      <ion-segment-button value="computing">
+        <ion-label>Computing</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="community">
+        <ion-label>Community</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="concept-art">
+        <ion-label>Concept Art</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="culinary">
+        <ion-label>Culinary</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="music">
+        <ion-label>Music</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ng-container [ngSwitch]="selectedView">
+      <div *ngSwitchCase="'computing'" class="inner-container">
+        <ion-img src="../../assets/computing.png"></ion-img>
+
+        <ion-label class="title">Completed Tasks</ion-label>
+      </div>
+    
+      <div *ngSwitchCase="'community'" class="inner-container">
+        <ion-img src="../../assets/computing.png"></ion-img>
+      </div>
+    
+      <div *ngSwitchCase="'concept-art'" class="inner-container">
+        <ion-img src="../../assets/computing.png"></ion-img>
+      </div>
+
+      <div *ngSwitchCase="'culinary'" class="inner-container">
+        <ion-img src="../../assets/computing.png"></ion-img>
+      </div>
+    
+      <div *ngSwitchCase="'music'" class="inner-container">
+        <ion-img src="../../assets/computing.png"></ion-img>
+      </div>
+    </ng-container>
+  </div>
+</ion-content>

@@ -25,5 +25,9 @@ export const routes: Routes = [
   {
     path: 'login',
     loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
+  },
+  {
+    path: 'skill-set',
+    loadComponent: () => import('./skill-set/skill-set.page').then( m => m.SkillSetPage)
   }
 ];

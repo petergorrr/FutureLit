@@ -1,0 +1,48 @@
+ion-content {
+    --ion-background-color: var(--ion-color-primary);
+
+    ion-label,
+    ion-icon,
+    ion-back-button  {
+        color: var(--ion-color-light);
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        ion-icon {
+            font-size: 60px;
+            margin-right: .5rem;
+        }
+    }
+
+    .skill-set-filter {
+        padding: 0 20px;
+
+        ion-segment-button.segment-button-checked {
+            border-bottom: 3px solid #FFBC3B;
+        }
+
+        .segment-button-checked ion-label {
+            color: #FFBC3B;
+        }
+
+        ion-label {
+            font-size: 1rem;
+        }
+    }
+
+    .inner-container {
+        padding-top: 20px;
+
+        ion-label {
+            padding-top: 20px;
+            font-size: 1.2rem;
+        }
+    }
+}
